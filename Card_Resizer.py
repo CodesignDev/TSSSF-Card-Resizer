@@ -49,14 +49,7 @@ def CleanDirectory(path=".", mkdir="workspace", rmstring="*.*"):
     return dir_path
 
 if __name__ == '__main__':
-    # To run this script, you have two options:
-    # 1) Run it from the command line with arguments. E.g.:
-    #       python GameGen -b TSSSF -f "Core 1.0.3/cards.pon"
-    # 2) Comment out "main(args.basedir, args.set_file)" in this file
-    #       and add a new line with the proper folder and card set
-    #       in the arguments.
-    # See the main() docstring for more info on the use of the arguments
-    parser = argparse.ArgumentParser(prog="GameGen")
+    parser = argparse.ArgumentParser(prog="Card_Resizer")
 
     parser.add_argument('-i', '--input-folder', \
                         help="Location of folder of images to be parsed",
